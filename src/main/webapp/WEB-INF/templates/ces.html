@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WepaintLogin</title>
+    <link type="text/css" rel="stylesheet" href="../../static/css/ces.css">
+    <link type="text/css" rel="stylesheet" href="../../static/css/ces2.css">
+    <script src="../../static/js/jquery.js"></script>
+
+
+</head>
+<body>
+<header>
+
+<span class="left-item">
+<a id="header-nav-temp">模板</a>
+</span>
+    <div class="left-item">
+    </div>
+    <div class="right-item">
+        <div id="user-logo" class="user-logo">
+            <button id="download" title="下载" class="paintcolor">下载</button>
+            <button id="save" title="保存" class="paintcolor">保存</button>
+            <button id="publish" title="发布" class="paintcolor">发布</button>
+            <img src="https://accounts.processon.com/uphoto/17/45/5f12e7f05653bb7fd23fe01e.png">
+        </div>
+    </div>
+</header>
+<div class="con-left">
+    <div id="tools">
+        <div id="tools_one">
+            <button id="clear" title="清空" class="short_click">清空</button>
+            <button id="next" title="前进" class="short_click">前进</button>
+            <button id="pre" title="后退" class="short_click">后退</button>
+        </div>
+
+        <div id="tools_two" class="color-group">
+            <div id="color_btn">
+                <button id="forecolor" title="前景色" class="paintcolor" style="background: black"></button>
+                <span style="width: 6px">前景色</span>
+                <button id="backcolor" title="后景色" class="paintcolor"></button>
+                <span>后景色</span>
+            </div>
+
+            <ul>
+                <li id="black" class="short_click colorchose" style="background-color: black;"></li>
+                <li id="red" class="short_click colorchose" style="background-color: red;"></li>
+                <li id="blue" class="short_click colorchose" style="background-color: #0066FF;"></li>
+                <li id="yellow" class="short_click colorchose" style="background-color: #FFFF33;"></li>
+                <li id="green" class="short_click colorchose" style="background-color: #33CC66;"></li>
+                <li id="pink" class="short_click colorchose" style="background-color: pink;"></li>
+            </ul>
+            <br/>
+            <input type="color" id="anycolor" class="paintcolor">编辑颜色</input>
+        </div>
+
+        <div id="tools_three">
+            <!--            <div class="dropdown-content">-->
+            <!--                <a href="//www.runoob.com"> 1</a>-->
+            <!--                <a href="//www.runoob.com"> 2</a>-->
+            <!--                <a href="//www.runoob.com"> 3</a>-->
+            <!--            </div>-->
+            <input type="range">
+        </div>
+        <div id="tools_four">
+
+            <button id="eraser" class="long_click active-item" title="橡皮">橡皮</button>
+            <button id="select" class="long_click active-item" title="选择">选择</button>
+            <button id="pen" class="long_click active-item" title="画笔">画笔</button>
+
+        </div>
+
+        <div id="tools_five">
+            <button id="code" class="short_click" title="代码">代码</button>
+            <button id="picture" class="short_click" title="图片">图片</button>
+            <button id="text" class="short_click" title="文本">文本</button>
+        </div>
+
+        <div id="tools_six">
+            <button id="arrow" class="long_click active-item" title="箭头">箭头</button>
+            <button id="rectangle" class="long_click active-item" title="长方形">长方形</button>
+            <button id="rightangle" class="long_click active-item" title="直角三角形">直角三角形</button>
+            <button id="equilateral" class="long_click active-item" title="等边三角形">等边三角形</button>
+            <button id="line" class="long_click active-item" title="直线">直线</button>
+            <button id="dottedline" class="long_click active-item" title="虚线">虚线</button>
+            <button id="circle" class="long_click active-item" title="正圆">正圆</button>
+            <button id="ellipse" class="long_click active-item" title="椭圆">椭圆</button>
+        </div>
+    </div>
+
+</div>
+<div class="con-right">
+
+    <div id="canvasContainer" class="canvasDiv">
+        <!--        <canvas id="cavsElem" >-->
+        <canvas id="cavsElem" height="630px" width=" 1250px">
+            你的浏览器不支持canvas，请升级浏览器.浏览器不支持，显示此行文本
+
+        </canvas>
+    </div>
+
+</div>
+</body>
+<script src="../../static/js/fabric.js"></script>
+<script src="../../static/js/ces.js"></script>
+
+</html>

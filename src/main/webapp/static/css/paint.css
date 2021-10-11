@@ -1,0 +1,162 @@
+header {
+    height: 90px;
+    padding: 0 40px;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    border: 1px solid #ffe57d;
+}
+header {
+    display: block;
+}
+body, html {
+    background: #f4f4f4;
+    color: #000;
+    font-family: Apple System,"SF Pro SC","SF Pro Display","Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN",sans-serif;
+    font-size: 13px;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+
+header .left-item {
+    min-width: 80px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    height: 100%;
+    top: 0;
+    text-align: right;
+    overflow: initial;
+}
+
+header .right-item {
+    position: absolute;
+    right: 22px;
+    display: inline-block;
+    text-align: right;
+    top: 10px;
+
+}
+
+.con-left {
+    position: fixed;
+    width: 250px;
+    height: calc(100% - 40px);
+    left: 0;
+    z-index: 2;
+    border: 1px solid #ffe57d;
+}
+div, input, textarea, ul {
+    resize: none;
+    outline: 0;
+    font-size: inherit;
+}
+div {
+    display: block;
+}
+
+a {
+    font-size: inherit;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.con-right {
+    height: calc(100% - 51px);
+    padding-left: 230px;
+    overflow: hidden;
+    min-width: 320px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #ffe57d;
+}
+
+.dir, .dir-box {
+    position: relative;
+    color: #666;
+    font-size: 12px;
+    position: relative;
+    padding-top: 16px;
+    padding-right: 28px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.page {
+    display: block;
+    clear: both;
+    text-align: center;
+}
+
+.con-right #canvasContainer {
+    position: fixed;
+    display: inline-block;
+    top: 105px;
+    left: 260px;
+    /*height: 80%;*/
+    height: 630px;
+    width: 1250px;
+    border:1px solid #adcd3c;background:#f2fddb
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*左边工具的样式*/
+#tools{
+
+
+
+    position: fixed;
+    width: 250px;
+    height: calc(100% - 40px);
+    left: 0;
+    z-index: 2;
+}
+
+.button{
+    /*position: absolute;*/
+    position:fixed;
+    left:10px;
+    top:20px;
+}
+
+
+#one{position: fixed;top:60px;border: 1px solid #00CCFF;}
+#one button{border-radius: 50%;width: 50px;height: 50px; background-color: rgba(255,255,255,0.7);border: 1px solid #eee;outline: none;cursor: pointer;box-sizing: border-box;margin: 0 10px;text-align: center;color:black;line-height: 18px;box-shadow:0 0 8px rgba(0,0,0,0.1); transition: 0.3s;}
+#one button:active{box-shadow: 0 0 25px #E552D9;}
+
+#two{position: fixed;top:120px;border: 1px solid #00CCFF;}
+.color-group ul{list-style: none;}
+.color-group ul li{width: 30px;height: 30px;margin: 10px 0;border-radius: 50%;box-sizing: border-box;border:3px solid white;box-shadow: 0 0 8px rgba(0,0,0,0.2);cursor: pointer;transition: 0.3s;}
+.color-group ul li.active{box-shadow:0 0 25px  #E552D9;}
+
+#three{position: fixed;top:200px;border: 1px solid #00CCFF;}
+#three button{border-radius: 50%;width: 50px;height: 50px; background-color: rgba(255,255,255,0.7);border: 1px solid #eee;outline: none;cursor: pointer;box-sizing: border-box;margin: 0 10px;text-align: center;color:black;line-height: 18px;box-shadow:0 0 8px rgba(0,0,0,0.1); transition: 0.3s;}
+#three button.active{box-shadow: 0 0 25px #E552D9;}
+
+#four{position: fixed;top:300px;left:1% ;border: 1px solid #00CCFF;width: 98%;}
+
+#five{position: fixed;top:500px;border: 1px solid #00CCFF;}
+#five button{border-radius: 50%;width: 30px;height: 30px; background-color: rgba(255,255,255,0.7);border: 1px solid #eee;outline: none;cursor: pointer;box-sizing: border-box;margin: 0 10px;color:black;line-height: 18px;box-shadow:0 0 8px rgba(0,0,0,0.1); transition: 0.3s;}
+#five button.active{box-shadow: 0 0 25px #E552D9;}

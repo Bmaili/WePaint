@@ -1,0 +1,262 @@
+header {
+    height: 90px;
+    padding: 0 40px;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    border: 1px solid #ffe57d;
+}
+
+header {
+    display: block;
+}
+
+body, html {
+    background: #f4f4f4;
+    color: #000;
+    font-family: Apple System, "SF Pro SC", "SF Pro Display", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", sans-serif;
+    font-size: 13px;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+
+header .left-item {
+    min-width: 80px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: inline-block;
+    height: 100%;
+    top: 0;
+    text-align: right;
+    overflow: initial;
+}
+
+header .right-item {
+    position: absolute;
+    right: 22px;
+    display: inline-block;
+    text-align: right;
+    top: 10px;
+
+}
+
+.con-left {
+    position: fixed;
+    width: 250px;
+    height: calc(100% - 40px);
+    left: 0;
+    z-index: 2;
+    border: 1px solid #ffe57d;
+}
+
+div, input, textarea, ul {
+    resize: none;
+    outline: 0;
+    font-size: inherit;
+}
+
+div {
+    display: block;
+}
+
+a {
+    font-size: inherit;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.con-right {
+    height: calc(100% - 51px);
+    padding-left: 230px;
+    overflow: hidden;
+    min-width: 320px;
+    position: relative;
+    z-index: 1;
+    border: 1px solid #ffe57d;
+}
+
+.dir, .dir-box {
+    position: relative;
+    color: #666;
+    font-size: 12px;
+    position: relative;
+    padding-top: 16px;
+    padding-right: 28px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.page {
+    display: block;
+    clear: both;
+    text-align: center;
+}
+
+.con-right #canvasContainer {
+    position: fixed;
+    display: inline-block;
+    top: 105px;
+    left: 260px;
+    /*height: 80%;*/
+    height: 630px;
+    width: 1250px;
+    border: 1px solid #adcd3c;
+    background: #f2fddb
+
+}
+
+
+/*左边工具的样式*/
+#tools {
+    position: fixed;
+    width: 250px;
+    height: calc(100% - 40px);
+    left: 0;
+    z-index: 2;
+}
+
+.button {
+    /*position: absolute;*/
+    position: fixed;
+    left: 10px;
+    top: 20px;
+}
+
+.short_click, .long_click {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #eee;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 10px;
+    text-align: center;
+    color: black;
+    line-height: 18px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+#tools_one {
+    position: absolute;
+    top: 10px;
+    width: 250px;
+    border: 1px solid #00CCFF;
+}
+#tools_two {
+    position: absolute;
+    top: 70px;
+    width: 250px;
+    border: 1px solid #00CCFF;
+    display: table;
+}
+#tools_three {
+    position: absolute;
+    top: 280px;
+    width: 250px;
+    height: 70px;
+    border: 1px solid #00CCFF;
+    display: table;
+}
+
+#tools_four {
+    position: absolute;
+    top: 360px;
+    width: 250px;
+    border: 1px solid #00CCFF;
+    display: table;
+}
+
+#tools_five {
+    position: absolute;
+    top: 420px;
+    width: 250px;
+    border: 1px solid #00CCFF;
+    display: table;
+}
+
+#tools_six {
+    position: absolute;
+    top: 475px;
+    width: 250px;
+    border: 1px solid #00CCFF;
+    display: table;
+}
+
+
+/*点击按钮光晕效果*/
+#tools_one button:active {
+    box-shadow: 0 0 25px #E552D9;
+}
+#tools_two button.active {
+    box-shadow: 0 0 25px #E552D9;
+}
+#tools_four button.active {
+    box-shadow: 0 0 25px #E552D9;
+}
+#tools_five button:active {
+    box-shadow: 0 0 25px #E552D9;
+}
+#tools_six button.active {
+    box-shadow: 0 0 25px #E552D9;
+}
+
+
+#tools_two #color_btn {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #777;
+    text-align: left;
+    width: 100px;
+}
+.paintcolor{
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #eee;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 10px 5px;
+    text-align: center;
+    color: black;
+    line-height: 18px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.color-group ul {
+    list-style: none;
+    float: left;
+    left: 10px;
+    width: 80px;
+    border: 1px solid #00CCFF;
+}
+
+.color-group ul li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 8px 0 0 8px;
+    line-height: 30px;;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}

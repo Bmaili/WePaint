@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>WepaintLogin</title>
+  <link type="text/css" rel="stylesheet" href="../../static/css/home.css">
+  <script src="../../static/js/jquery.js"></script>
+</head>
+<body>
+<header>
+
+<span class="left-item">
+<a href="/diagrams" class="active">个人</a>
+<a href="/popular" id="header-popular">推荐</a>
+<a id="header-nav-temp">模板</a>
+</span>
+  <div class="right-item">
+    <div id="user-logo" class="user-logo">
+      <img src="https://accounts.processon.com/uphoto/17/45/5f12e7f05653bb7fd23fe01e.png">
+    </div>
+  </div>
+</header>
+<div class="con-left">
+  <div class="left-box">
+    <a id="new-file" class="button new-file">新建</a>
+  </div>
+  <a href="" data-nav="diagrams" class="active"><label>我的文件</label></a>
+  <a href="" data-nav="history"><label>最近修改</label></a>
+  <a href="" data-nav="colla"><label>与我协作</label></a>
+  <a href="" data-nav="fav"><label>我的收藏</label></a>
+  <a href="" data-nav="trash"><label>回收站</label></a>
+</div>
+<div class="con-right">
+  <div class="dir">
+    <span id="dir_root" class="item active" data-f-id="root">我的文件</span>
+  </div>
+  <div class="file-list" style="height: 551px;">
+    <div></div>
+
+    <!--        单个文件-->
+    <div class="file-list-item" sortnum="0" tp="chart" id="615d62770791295710b6c445" cate="flow"
+         style="width: calc(25% - 16px);">
+      <div class="file-img-container"><img
+              src="https://img.processon.com/chart_image/thumb/615d62770791295710b6c447.png?cid=615d62770791295710b6c445">
+      </div>
+      <div class="title ct"><a href="javascript:;"><span class="icons fileICO"
+                                                         style="background-color:#4386f5; color:#4386f5;font-size:14px;"></span><label>未命名文件</label></a>
+      </div>
+      <span class="icons op"></span></div>
+    <div tempdiv="" style="height:70px;"></div>
+
+    <div class="file-list-item" sortnum="0" tp="chart" id="615d62770731295710b6c445" cate="flow"
+         style="width: calc(25% - 16px);">
+      <div class="file-img-container"><img
+              src="https://img.processon.com/chart_image/thumb/615d62770791295710b6c447.png?cid=615d62770791295710b6c445">
+      </div>
+      <div class="title ct"><a href="javascript:;"><span class="icons fileICO"
+                                                         style="background-color:#4386f5; color:#4386f5;font-size:14px;"></span><label>未命名文件</label></a>
+      </div>
+      <span class="icons op"></span></div>
+    <div tempdiv="" style="height:70px;"></div>
+
+
+  </div>
+  <div class="page">
+    <div class="pagination"></div>
+  </div>
+</div>
+
+<div id="ces_need_delete">
+登陆成功！<br>
+request的username:<br>
+<p th:text="${username}"></p>
+session的user:<br>
+<p th:text="${session.USER_SESSION}"></p>
+  </div>
+</body>
+</html>

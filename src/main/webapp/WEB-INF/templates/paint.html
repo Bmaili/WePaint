@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WepaintLogin</title>
+    <link type="text/css" rel="stylesheet" href="../../static/css/paint.css">
+    <script src="../../static/js/jquery.js"></script>
+
+
+</head>
+<body>
+<header>
+
+<span class="left-item">
+<a id="header-nav-temp">模板</a>
+</span>
+    <div class="right-item">
+        <div id="user-logo" class="user-logo">
+            <img src="https://accounts.processon.com/uphoto/17/45/5f12e7f05653bb7fd23fe01e.png">
+        </div>
+    </div>
+</header>
+<div class="con-left">
+    <div id="tools">
+        <div id="one">
+            <button id="next" title="前进"><i class="iconfont icon-next"></i>前进</button>
+            <button id="pre" title="后退"><i class="iconfont icon-pre"></i>后退</button>
+            <button id="clear" title="清空"><i class="iconfont icon-qingchu"></i>清空</button>
+            <!--            <button id="picture" title="贴图"><i class="iconfont icon-picture"></i>贴图</button>-->
+            <a data-toggle="collapse" data-parent="#accordion"
+               href="#collapse_Picture">
+                <button id="show_picture" title="贴图"><i class="iconfont icon-picture"></i>贴图</button>
+            </a>
+            <div id="collapse_Picture" class="panel-collapse collapse">
+                <input type="text" id="picture_url" placeholder="请输入完整图片URL链接">
+                <button id="picture">提交</button>
+            </div>
+        </div>
+
+
+        <div id="two" class="color-group">
+            <ul>
+                <li id="black" class="color-item" style="background-color: black;"></li>
+                <li id="red" class="color-item" style="background-color: #FF3333;"></li>
+                <li id="blue" class="color-item" style="background-color: #0066FF;"></li>
+                <li id="yellow" class="color-item" style="background-color: #FFFF33;"></li>
+                <li id="green" class="color-item" style="background-color: #33CC66;"></li>
+            </ul>
+            <input type="color">任意色</input>
+        </div>
+
+        <div id="three">
+            <button id="eraser" class="active-item" title="橡皮">橡皮</button>
+            <button id="text" class="active-item" title="文本">文本</button>
+            <button id="pen" class="active-item" title="画笔">画笔</button>
+            <button id="select" class="active-item" title="选择">选择</button>
+        </div>
+
+        <div id="four">
+            <!--            <input id="penSize" type="range" value="10" min="0" max="70" step="0.01" title="画笔粗细"></input>-->
+            <input type="range" id="penSize" value="20">
+
+            <p id="demo"></p>
+        </div>
+
+        <div id="five">
+            <label for="sel"></label><select name="sel" id="sel">
+            <option value=10>10</option>
+            <option value=20>20</option>
+            <option value=30>30</option>
+            <option value=40>40</option>
+        </select>
+            <button id="arrow" class="active-item" title="箭头">箭头</button>
+            <button id="rectangle" class="active-item" title="长方形">长方形</button>
+            <button id="rightangle" class="active-item" title="直角三角形">直角三角形</button>
+            <button id="equilateral" class="active-item" title="等边三角形">等边三角形</button>
+            <button id="line" class="active-item" title="直线">直线</button>
+            <button id="dottedline" class="active-item" title="虚线">虚线</button>
+            <button id="circle" class="active-item" title="正圆">正圆</button>
+            <button id="ellipse" class="active-item" title="椭圆">椭圆</button>
+        </div>
+    </div>
+
+</div>
+<div class="con-right">
+
+    <div id="canvasContainer" class="canvasDiv">
+        <!--        <canvas id="cavsElem" >-->
+        <canvas id="cavsElem" height="630px" width=" 1250px">
+            你的浏览器不支持canvas，请升级浏览器.浏览器不支持，显示此行文本
+
+        </canvas>
+    </div>
+
+</div>
+</body>
+<script src="../../static/js/fabric.js"></script>
+<script src="../../static/js/paint.js"></script>
+
+</html>
