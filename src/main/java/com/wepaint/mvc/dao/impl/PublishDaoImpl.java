@@ -20,7 +20,7 @@ public class PublishDaoImpl extends BaseDao implements PublishDao {
 
     @Override
     public int updatePublish(Publish publish) {
-        String sql = "update tb_paint set `publish_name`=?,`user_id`=?,`username`=?,`collect_num`=?,`like_num`=?,`publish_time`=? ,`json_data`=?,`img_path`=? where `publish_id` = ?";
+        String sql = "update tb_publish set `publish_name`=?,`user_id`=?,`username`=?,`collect_num`=?,`like_num`=?,`publish_time`=? ,`json_data`=?,`img_path`=? where `publish_id` = ?";
         return update(sql, publish.getPublishName(), publish.getUserID(), publish.getUserName(), publish.getCollectNum(), publish.getLikeNum(), publish.getPublishTime(), publish.getJsonData(), publish.getImgPath(), publish.getPublishID());
     }
 
