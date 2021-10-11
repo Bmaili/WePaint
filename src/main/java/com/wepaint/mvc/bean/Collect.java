@@ -1,14 +1,14 @@
 package com.wepaint.mvc.bean;
 
-public class UserCollectPaint {
+public class Collect {
     private Integer collectID;
     private Integer userID;
     private Integer publishID;
 
-    public UserCollectPaint() {
+    public Collect() {
     }
 
-    public UserCollectPaint(Integer collectID, Integer userID, Integer publishID) {
+    public Collect(Integer collectID, Integer userID, Integer publishID) {
         this.collectID = collectID;
         this.userID = userID;
         this.publishID = publishID;

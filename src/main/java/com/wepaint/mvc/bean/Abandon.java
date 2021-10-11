@@ -1,25 +1,25 @@
 package com.wepaint.mvc.bean;
 
-public class UserHavePaint {
-    private Integer haveID;
+public class Abandon {
+    private Integer abandonID;
     private Integer userID;
     private Integer paintID;
 
-    public UserHavePaint() {
+    public Abandon() {
     }
 
-    public UserHavePaint(Integer haveID, Integer userID, Integer paintID) {
-        this.haveID = haveID;
+    public Abandon(Integer abandonID, Integer userID, Integer paintID) {
+        this.abandonID = abandonID;
         this.userID = userID;
         this.paintID = paintID;
     }
 
-    public Integer getHaveID() {
-        return haveID;
+    public Integer getAbandonID() {
+        return abandonID;
     }
 
-    public void setHaveID(Integer haveID) {
-        this.haveID = haveID;
+    public void setAbandonID(Integer abandonID) {
+        this.abandonID = abandonID;
     }
 
     public Integer getUserID() {
@@ -40,8 +40,8 @@ public class UserHavePaint {
 
     @Override
     public String toString() {
-        return "UserHavePaint{" +
-                "haveID=" + haveID +
+        return "UserAbandonPaint{" +
+                "abandonID=" + abandonID +
                 ", userID=" + userID +
                 ", paintID=" + paintID +
                 '}';
